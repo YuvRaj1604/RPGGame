@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ConsoleApplication1.cpp">
+    <ClCompile Include="RPG.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -24,6 +24,24 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="int tyep.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="warrior.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StatBlock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="assasin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="healer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="allclass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

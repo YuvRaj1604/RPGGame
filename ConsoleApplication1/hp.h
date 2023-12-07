@@ -2,10 +2,10 @@
 #include "int tyep.h"
 
 class hp {
-private :
+private:
 	sixnum Currenthp;
 	sixnum Maxhp;
-	
+
 public:
 	bool maxhp(sixnum new_max_hp) {
 		if (new_max_hp < 1)
@@ -18,12 +18,12 @@ public:
 	}
 
 	void takedamage(sixnum damage) {
-		if (damage >= Currenthp ) {
+		if (damage >= Currenthp) {
 			Currenthp = 0;
 			return;
 		}
 		Currenthp -= damage;
-	
+
 	}
 
 	void healing(sixnum heal) {
@@ -31,7 +31,17 @@ public:
 			Currenthp = Maxhp;
 			return;
 		}
-		
+
 		Currenthp += heal;
 	}
+
+	hp() {
+		Currenthp = 1; Maxhp = 1;
+	}
+
+	hp(sixnum cHp, sixnum mHp) {
+		Currenthp = cHp;
+		Maxhp = mHp;
+		if (Currenthp > Maxhp) Currenthp = Maxhp;
+	};
 };
